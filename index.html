@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 15_Vận dụng 2</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            background-image: url('https://cdn.pixabay.com/photo/2017/04/06/17/16/sakura-2209733_960_720.jpg'); /* Hình nền hoa anh đào */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(255, 192, 203, 0.8); /* Màu hồng nhạt */
+            color: white;
+            padding: 20px;
+            font-size: 2rem;
+            text-align: center;
+            border-bottom: 5px solid #f8d7da;
+        }
+
+        .content {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            padding: 30px;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .content h2 {
+            color: #e91e63; /* Màu hồng đậm */
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .content strong {
+            color: #f44336; /* Màu đỏ tươi */
+        }
+
+        footer {
+            background-color: rgba(255, 192, 203, 0.8);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1rem;
+            border-top: 5px solid #f8d7da;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bài 15_Vận dụng 2: Tìm ví dụ và giải thích ý nghĩa cho các mẫu định dạng CSS</h1>
+    </header>
+
+    <div class="content">
+        <h2>a) Mẫu định dạng E + F + G:</h2>
+        <p>Đây là một mẫu kết hợp (<strong>adjacent sibling combinator</strong>) trong CSS, áp dụng cho các phần tử G là anh em kế tiếp của phần tử F, và phần tử F là anh em kế tiếp của phần tử E. Mẫu này yêu cầu F và G nằm trực tiếp sau E và cùng nằm trong cùng một cấp độ của cây phân cấp.</p>
+        
+      
+        <p>Trong ví dụ sau, mẫu định dạng <strong>.container h2 + p + p</strong> áp dụng cho các phần tử <code>&lt;p&gt;</code> nằm sau phần tử <code>&lt;h2&gt;</code>, và cùng nằm trực tiếp sau một phần tử <code>&lt;p&gt;</code>. Điều này cho phép chúng ta định dạng các phần tử <code>&lt;p&gt;</code> mà là anh em kế tiếp của phần tử <code>&lt;h2&gt;</code> và nằm trực tiếp sau một phần tử <code>&lt;p&gt;</code>.</p>
+
+        <h2>b) Mẫu định dạng E > F + G:</h2>
+        <p>Đây là một mẫu kết hợp (<strong>child combinator và adjacent sibling combinator</strong>) trong CSS, áp dụng cho các phần tử G là anh em kế tiếp của phần tử F, và phần tử F là con trực tiếp của phần tử E. Mẫu này yêu cầu F và G nằm trực tiếp sau E và cùng nằm trong cùng một cấp độ của cây phân cấp.</p>
+        
+        
+        <p>Trong ví dụ sau, mẫu định dạng <strong>.container > ul + p + ul</strong> áp dụng cho các phần tử <code>&lt;ul&gt;</code> nằm trực tiếp sau phần tử <code>&lt;p&gt;</code>, và cùng nằm trực tiếp sau một phần tử <code>&lt;ul&gt;</code> nằm trực tiếp trong phần tử có lớp "container". Điều này cho phép chúng ta áp dụng kiểu CSS cho các phần tử <code>&lt;ul&gt;</code> mà là anh em kế tiếp của một phần tử <code>&lt;p&gt;</code> và nằm trực tiếp sau một phần tử <code>&lt;ul&gt;</code> nằm trực tiếp trong phần tử có lớp "container".</p>
+    </div>
+</body>
+</html>
